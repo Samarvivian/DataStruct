@@ -2,6 +2,7 @@
 Status SLTPrint(SLTNode *phead)
 {
     //assert(phead);这句话在下面的while循环条件中可以再判断
+    //其实这句话也可以没有的，因为空链表也可以打印
     SLTNode *cur=phead;//用作游标，如果带头节点就是phead->next
     while(cur)
     {
@@ -14,6 +15,7 @@ Status SLTPrint(SLTNode *phead)
 
 Status SLTPushBack1(SLTNode **pphead,ElemType x)
 {
+    assert(pphead);//链表可以为空，但是链表头节点的地址不能为空
     //带头节点的尾插，至于为什么要传入二级指针，在接下来不带头节点的插入中再详细说明
 
     //malloc新节点，存储x
@@ -55,6 +57,7 @@ Status SLTPushBack1(SLTNode **pphead,ElemType x)
 
 Status SLTPushBack2(SLTNode **pphead,ElemType x)
 {
+    assert(pphead);
     SLTNode *newnode=(SLTNode *)malloc(sizeof(SLTNode));
     if(!newnode)
     {
@@ -82,6 +85,7 @@ Status SLTPushBack2(SLTNode **pphead,ElemType x)
 
 Status SLTPushHead1(SLTNode **pphead,ElemType x)
 {
+    assert(pphead);
     SLTNode *newnode=(SLTNode*)malloc(sizeof(SLTNode));
     if(!newnode)
     {
@@ -96,6 +100,7 @@ Status SLTPushHead1(SLTNode **pphead,ElemType x)
 
 Status SLTPushHead2(SLTNode **pphead,ElemType x)
 {
+    assert(pphead);
     SLTNode *newnode=(SLTNode*)malloc(sizeof(SLTNode));
     if(!newnode)
     {
@@ -111,6 +116,7 @@ Status SLTPushHead2(SLTNode **pphead,ElemType x)
 
 Status SLTPopBack(SLTNode **pphead)
 {
+    assert(pphead);
     // SLTNode *tail=(*pphead);//用于找到尾结点
     // while(tail->next)
     // {
@@ -198,7 +204,7 @@ Status SLTPopBack(SLTNode **pphead)
 
 Status SLTPopHead(SLTNode **pphead)
 {
-    assert(*pphead);
+    assert(pphead);
     
     SLTNode*next=(*pphead)->next;
     free(*pphead);
@@ -210,6 +216,7 @@ Status SLTPopHead(SLTNode **pphead)
 
 SLTNode* SLTFind1(SLTNode *phead,ElemType x)
 {
+    
     SLTNode *cur=phead;
     while(cur)
     {
@@ -227,6 +234,7 @@ SLTNode* SLTFind1(SLTNode *phead,ElemType x)
 
 Status SLTInsert1(SLTNode **pphead,SLTNode *pos,ElemType x)
 {
+    assert(pphead);
     SLTNode *newnode=(SLTNode*)malloc(sizeof(SLTNode));
     if(!newnode)
     {

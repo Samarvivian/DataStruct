@@ -6,20 +6,28 @@
 
 #define error 0
 #define ok 1
-#define MAXSIZE 1000//在这里我们实现静态顺序串
 
-typedef int SElemType;
+
+
 typedef int Status;
 typedef struct SqString
 {
-    int data[MAXSIZE];
+    char *data;
     int len;//表示串长度
 }SqString;
 
 SqString* SqStringInit(void);
 
-int SqStringlen(SqString *str);
+Status SqStringAssign(SqString *str,char *data);//将data数组里的元素赋值给字符串
 
-bool SqStringEmpty(SqString *str);
+Status SqStringPrint(SqString str);
 
-bool SqStringEqual(SqString *str1,SqString *str2);
+void forcematch(SqString *master,SqString *sub);//字符串暴力匹配
+
+Status KMP(SqString *str,SqString *sub,int pos);//KMP算法，从第pos个位置开始匹配
+
+// int SqStringlen(SqString *str);
+
+// bool SqStringEmpty(SqString *str);
+
+// bool SqStringEqual(SqString *str1,SqString *str2);
