@@ -10,7 +10,7 @@ typedef int QElemType;
 typedef int Status;
 
 typedef struct QueueNode{
-     struct QueueNode *next;
+    struct QueueNode *next;
     QElemType data;
 }QueueNode;
 
