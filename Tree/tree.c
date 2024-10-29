@@ -49,9 +49,9 @@ void inorder(TreeNode *tree)
     else
     {
         
-        preOrder(tree->lchild);
+        inorder(tree->lchild);
         printf("%c",tree->data);
-        preOrder(tree->rchild);
+        inorder(tree->rchild);
     }
 }
 
@@ -64,9 +64,9 @@ void postorder(TreeNode *tree)
     else
     {
         
-        preOrder(tree->lchild);
+        postorder(tree->lchild);
         
-        preOrder(tree->rchild);
+        postorder(tree->rchild);
         printf("%c",tree->data);
     }
 }
