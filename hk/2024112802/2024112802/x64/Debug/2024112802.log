@@ -1,0 +1,5 @@
+﻿  2.cpp
+F:\DataStruct\hk\2024112802\2.cpp(39,10): warning C4473: “scanf_s”: 没有为格式字符串传递足够的参数
+F:\DataStruct\hk\2024112802\2.cpp(57,11): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+F:\DataStruct\hk\2024112802\2.cpp(61,11): warning C4473: “scanf_s”: 没有为格式字符串传递足够的参数
+  2024112802.vcxproj -> F:\DataStruct\hk\2024112802\x64\Debug\2024112802.exe
