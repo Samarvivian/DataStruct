@@ -53,8 +53,8 @@ void quicksort(int* nums, int left, int right)
 
 	}
 	int pivot = partition(nums, left, right);
-	partition(nums, left, pivot - 1);
-	partition(nums, pivot + 1, right);
+	quicksort(nums, left, pivot - 1);
+	quicksort(nums, pivot + 1, right);
 }
 int main()
 {
