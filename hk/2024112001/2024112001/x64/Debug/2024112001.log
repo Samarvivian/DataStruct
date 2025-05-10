@@ -1,0 +1,4 @@
+﻿  test.cpp
+F:\DataStruct\hk\2024112001\test.cpp(19,16): warning C4091: “typedef ”: 没有声明变量时忽略“Vex”的左侧
+F:\DataStruct\hk\2024112001\test.cpp(26,16): warning C4091: “typedef ”: 没有声明变量时忽略“ARS”的左侧
+  2024112001.vcxproj -> F:\DataStruct\hk\2024112001\x64\Debug\2024112001.exe

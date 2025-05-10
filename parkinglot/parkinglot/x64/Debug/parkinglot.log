@@ -1,0 +1,5 @@
+﻿  test.c
+F:\DataStruct\parkinglot\test.c(237,29): warning C4244: “return”: 从“__int64”转换到“int”，可能丢失数据
+F:\DataStruct\parkinglot\test.c(268,17): warning C4473: “scanf_s”: 没有为格式字符串传递足够的参数
+F:\DataStruct\parkinglot\test.c(71,1): warning C4716: “CarInit”: 必须返回一个值
+  parkinglot.vcxproj -> F:\DataStruct\parkinglot\x64\Debug\parkinglot.exe

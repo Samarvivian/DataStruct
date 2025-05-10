@@ -1,0 +1,3 @@
+﻿  test.cpp
+F:\DataStruct\critialpath\test.cpp(19,16): warning C4091: “typedef ”: 没有声明变量时忽略“StackNode”的左侧
+  critialpath.vcxproj -> F:\DataStruct\newgraph\x64\Debug\critialpath.exe
